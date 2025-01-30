@@ -1,0 +1,251 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    color: #555555;
+    transition: background-color 0.5s ease;
+  }
+  
+  .navbar {
+    background: linear-gradient(to right, #2A3C53, #006F6B); /* Deep blue to teal gradient */
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.5s ease-out;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #F0A500; /* Gold accent */
+    transform: scale(1.1);
+    letter-spacing: 1px;
+  }
+  
+  /* Main Content Styling */
+  .total {
+    margin-top: 100px;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .index, .study, .projects, .Links, .enquiry {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .index:hover, .study:hover, .projects:hover, .Links:hover, .enquiry:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1, h2 {
+    color: #333333; /* Dark charcoal for headings */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555555;
+    transition: color 0.3s ease;
+  }
+  
+  p:hover {
+    color: #333333; /* Darker text color on hover */
+  }
+  
+  .image-small {
+    width: 220px;
+    height: auto;
+    margin: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-small:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .Links a {
+    display: inline-block;
+    font-size: 18px;
+    color: #006F6B; /* Teal accent */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .Links a:hover {
+    color: #F0A500; /* Gold accent */
+    transform: scale(1.1);
+    letter-spacing: 1px;
+  }
+  
+  /* Enquiry Form */
+  .enquiry form {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: slideUp 0.7s ease-out;
+  }
+  
+  .enquiry input, .enquiry textarea {
+    width: 100%;
+    padding: 12px 18px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .enquiry input:focus, .enquiry textarea:focus {
+    border: 1px solid #006F6B; /* Teal focus border */
+    box-shadow: 0 4px 20px rgba(0, 111, 107, 0.2);
+  }
+  
+  .enquiry button {
+    background-color: #006F6B; /* Teal background */
+    color: white;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .enquiry button:hover {
+    background-color: #F0A500; /* Gold hover effect */
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2A3C53; /* Dark blue background */
+    color: white;
+    margin-top: 30px;
+    font-size: 14px;
+    animation: fadeIn 2s ease;
+    position: relative;
+  }
+  
+  footer a {
+    color: #F0A500; /* Gold accent for footer links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: white;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
